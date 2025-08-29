@@ -1,30 +1,47 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validação de form com JS</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-</head>
-<body>
-    <h1>Form com validação JavaScript</h1>
-    <form id="form">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" />
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" />
-        <label for="password">Senha:</label>
-        <input type="password" id="password" />
-        <label for="job">Situação de trabalho:</label>
-        <select name="job" id="job">
-            <option value="">Está buscando emprego?</option>
-            <option value="yes">Sim</option>
-            <option value="no">Não</option>
-        </select>
-        <label for="message">Mensagem:</label>
-        <textarea name="mess /age" id="message"></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-</body>
-</html>
+const form = document.querySelector("#form");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const passwordInput = document.querySelector("#password");
+const jobSelect = document.querySelector("#job");
+const messageTextarea = document.querySelector("#message");
+
+//evita que a página dê refresh no form.
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    //valida nome
+    if(nameInput.value ===""){
+        alert("Por favor, preencha o seu nome");
+        return;
+    }
+    //valida email
+    if(emailInput.value ===""){
+        alert("Por favor, preencha o seu e-mail");
+        return;
+    }
+    //valida senha
+    if(!validatePassword(passwordInput.value, 8)){
+        alert("A senha precisa ter no mínimo 8 dígitos");
+        return;
+    }
+    //valida situação
+    if(jobSelect.value ===""){
+        alert("Por favor, escolha uma situação de trabalho");
+        return;
+    }
+    //valida mensagem
+    if(messageTextarea.value ===""){
+        alert("Por favor, preencha a mensagem");
+        return;
+    }
+    form.submit();
+})
+
+//Função que valida senha
+function validatePassword(password, minDigit) {
+    if (password.length >= minDigit) {
+        return true
+
+    }
+    return false
+};

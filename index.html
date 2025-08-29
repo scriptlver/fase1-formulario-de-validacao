@@ -22,7 +22,7 @@
         <label for="phone">Telefone:</label>
         <input type="tel" id="phone" name="phone" />
 
-        <label for="sexo">Sexo:</Label>
+        <label for="sexo">Sexo:</label>
         <select name="sexo" id="sexo">
             <option value="">-- Selecione --</option>
             <option value="mas">Masculino</option>
@@ -31,7 +31,7 @@
         </select>
 
         <label for="camisa">Tamanho da Camisa:</label>
-        <select name="tamanho" id="tamanho">
+        <select name="camisa" id="camisa">
             <option value="">-- Selecione --</option>
             <option value="pp">PP</option>
             <option value="p">P</option>
@@ -40,8 +40,8 @@
             <option value="gg">GG</option>
         </select>
 
-        <label for="ws">Escolha uma Oficina:</label>
-        <select name="ws" id="ws">
+        <label for="oficina">Escolha uma Oficina:</label>
+        <select name="oficina" id="oficina">
             <option value="">-- Selecione --</option>
             <option value="opcao1">Programação para Iniciantes</option>
             <option value="opcao2">Design Thinking</option>
@@ -60,28 +60,22 @@
         </select>
 
         <label for="ticket">Tipo de Ingresso:</label>
-            <select name="ticket" id="ticket" required>
+        <select name="ticket" id="ticket" required>
             <option value="">-- Selecione --</option>
             <option value="estudante">Estudante (50% de desconto)</option>
-            <option value="profissional"> Profissional (acesso normal)</option>
+            <option value="profissional">Profissional (acesso normal)</option>
             <option value="vip">VIP (todas as oficinas + brindes)</option>
         </select>
 
         <label for="message">Observações:</label>
-            <textarea name="message" id="message"></textarea>
-            <button type="submit">Enviar</button>
-        
+        <textarea name="message" id="message"></textarea>
+
         <label>
             <input type="checkbox" id="confirm" required>Confirmo minha inscrição na InovaWeek 2025
         </label>
 
-        <button type="submit">📩 Enviar Inscrição</button>
-
-
-
-
+        <button type="submit">Enviar Inscrição</button>
     </form>
-
 
     <script src="js/script.js" defer></script>
 </body>
