@@ -13,6 +13,9 @@
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name" />
 
+        <label for="birth">Data de Nascimento:</label>
+        <input type="date" id="birth" name="birth">
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" />
 
@@ -21,19 +24,40 @@
 
         <label for="ws">Escolha uma Oficina:</label>
         <select name="ws" id="ws">
-            <option value="opcao"></option>
+            <option value="">-- Selecione --</option>
             <option value="opcao1">Programação para Iniciantes</option>
             <option value="opcao2">Design Thinking</option>
             <option value="opcao3">Inteligência Artificial no Dia a Dia</option>
             <option value="opcao4">Criação de Startups</option>
             <option value="opcao5">Marketing Digital</option>
-            <option value="opcao6">UX/UI Design</option>
-
-
+            <option value="opcao6">UX/UI Design</option>   
         </select>
 
+        <label for="turno">Escolha um Turno:</label>
+        <select name="turno" id="turno">
+            <option value="">-- Selecione --</option>
+            <option value="t1">Manhã</option>
+            <option value="t2">Tarde</option>
+            <option value="t3">Noite</option>
+        </select>
 
+        <label for="ticket">Tipo de Ingresso:</label>
+            <select name="ticket" id="ticket" required>
+            <option value="">-- Selecione --</option>
+            <option value="estudante">Estudante (50% de desconto)</option>
+            <option value="profissional"> Profissional (acesso normal)</option>
+            <option value="vip">VIP (todas as oficinas + brindes)</option>
+        </select>
+
+        <label for="message">Observações:</label>
+            <textarea name="mess /age" id="message"></textarea>
+            <button type="submit">Enviar</button>
         
+        <label>
+            <input type="checkbox" id="confirm" required>Confirmo minha inscrição na InovaWeek 2025
+        </label>
+
+
 
     </form>
 
