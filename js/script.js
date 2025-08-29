@@ -6,6 +6,7 @@ const emailInput = document.querySelector("#email");
 const phoneInput = document.querySelector("#phone");
 const sexoSelect = document.querySelector("#sexo");
 const camisaSelect = document.querySelector("#camisa");
+const PCDSelect = document.querySelector("#tipo");
 const categoriaSelect = document.querySelector("#categoria");
 const messageTextarea = document.querySelector("#message");
 const confirmCheckbox = document.querySelector("#confirm");
@@ -48,6 +49,11 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
+    if (tipoSelect.value == "") {
+        alert("Por favor, escolha uma das opções.");
+        return;
+    }
+
     if (categoriaSelect.value === "") {
         alert("Por favor, escolha uma categoria da corrida.");
         return;
@@ -69,6 +75,7 @@ form.addEventListener("submit", (event) => {
     console.log("Telefone:", phoneInput.value);
     console.log("Sexo:", sexoSelect.value);
     console.log("Tamanho da camisa:", camisaSelect.value);
+    console.log("Atleta PCD:", tipoSelect.value);
     console.log("Categoria da corrida:", categoriaSelect.value);
     console.log("Observações:", messageTextarea.value);
 

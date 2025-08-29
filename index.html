@@ -12,22 +12,22 @@
 
     <form id="form">
         <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="name" />
 
         <label for="birth">Data de Nascimento:</label>
-        <input type="date" id="birth" name="birth" required>
+        <input type="date" id="birth" name="birth" />
 
         <label for ="cpf">CPF</label>
-        <input type="cpf" id="cpf" name="cpf" required />
+        <input type="cpf" id="cpf" name="cpf" />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" />
 
         <label for="phone">Telefone:</label>
-        <input type="tel" id="phone" name="phone" required />
+        <input type="tel" id="phone" name="phone" />
 
         <label for="sexo">Sexo:</label>
-        <select name="sexo" id="sexo" required>
+        <select name="sexo" id="sexo" >
             <option value="">-- Selecione --</option>
             <option value="mas">Masculino</option>
             <option value="fem">Feminino</option>
@@ -35,7 +35,7 @@
         </select>
 
         <label for="camisa">Tamanho da Camiseta:</label>
-        <select name="camisa" id="camisa" required>
+        <select name="camisa" id="camisa">
             <option value="">-- Selecione --</option>
             <option value="pp">PP</option>
             <option value="p">P</option>
@@ -45,8 +45,15 @@
             <option value="xg">XG</option>
         </select>
 
+        <label for="tipo">Atleta PCD?</label>
+        <select name="tipo" id="tipo">
+            <option value="">-- Selecione --</option>
+            <option value="sim">Sim</option>
+            <option value="não">Não</option>
+        </select>    
+
         <label for="categoria">Categoria da Corrida:</label>
-        <select name="categoria" id="categoria" required>
+        <select name="categoria" id="categoria" >
             <option value="">-- Selecione --</option>
             <option value="3">3 KM</option>
             <option value="5"> 5 KM</option>
@@ -60,7 +67,7 @@
         <textarea name="message" id="message"></textarea>
 
         <label>
-            <input type="checkbox" id="confirm" required>Confirmo minha inscrição no RunTech 2025
+            <input type="checkbox" id="confirm" >Confirmo minha inscrição no RunTech 2025
         </label>
 
         <button type="submit">Enviar Inscrição</button>
