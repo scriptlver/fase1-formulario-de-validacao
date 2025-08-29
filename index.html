@@ -17,6 +17,9 @@
         <label for="birth">Data de Nascimento:</label>
         <input type="date" id="birth" name="birth" required>
 
+        <label for ="cpf">CPF</label>
+        <input type="cpf" id="cpf" name="cpf" required />
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required />
 
@@ -39,15 +42,18 @@
             <option value="m">M</option>
             <option value="g">G</option>
             <option value="gg">GG</option>
+            <option value="xg">XG</option>
         </select>
 
         <label for="categoria">Categoria da Corrida:</label>
         <select name="categoria" id="categoria" required>
             <option value="">-- Selecione --</option>
-            <option value="3">3 km</option>
-            <option value="5"> 5 km</option>
-            <option value="10">10 km</option>
-            <option value="21">21 km</option>
+            <option value="3">3 KM</option>
+            <option value="5"> 5 KM</option>
+            <option value="10">10 KM</option>
+            <option value="21">21 KM</option>
+            <option value="PCD">PCD - 5KM</option>
+            <option value="cadeirante"> PCD - Cadeirante</option>
         </select>
 
         <label for="message">Observações:</label>

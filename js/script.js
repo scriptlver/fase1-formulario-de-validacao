@@ -1,6 +1,7 @@
 const form = document.querySelector("#form");
 const nameInput = document.querySelector("#name");
 const birthInput = document.querySelector("#birth");
+const cpfInput = document.querySelector("#cpf");
 const emailInput = document.querySelector("#email");
 const phoneInput = document.querySelector("#phone");
 const sexoSelect = document.querySelector("#sexo");
@@ -19,6 +20,11 @@ form.addEventListener("submit", (event) => {
 
     if (birthInput.value === "") {
         alert("Por favor, preencha a sua data de nascimento.");
+        return;
+    }
+
+    if (cpfInput.value === ""){
+        alert("Por favor, preencha o seu CPF.");
         return;
     }
 
