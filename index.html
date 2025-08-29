@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscrição - InovaWeek 2025</title>
+    <title>Inscrição - RunTech 2025</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Formulário de Inscrição - InovaWeek 2025</h1>
-    <p>Garanta sua vaga nas oficinas da InovaWeek 2025 e transforme suas ideias em realidade!</p>
+    <h1>Formulário de Inscrição - RunTech 2025</h1>
+    <p>Garanta sua participação na corrida tecnológica mais inovadora do ano!</p>
+
     <form id="form">
         <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required />
 
         <label for="birth">Data de Nascimento:</label>
-        <input type="date" id="birth" name="birth">
+        <input type="date" id="birth" name="birth" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
+        <input type="email" id="email" name="email" required />
 
         <label for="phone">Telefone:</label>
-        <input type="tel" id="phone" name="phone" />
+        <input type="tel" id="phone" name="phone" required />
 
         <label for="sexo">Sexo:</label>
-        <select name="sexo" id="sexo">
+        <select name="sexo" id="sexo" required>
             <option value="">-- Selecione --</option>
             <option value="mas">Masculino</option>
             <option value="fem">Feminino</option>
             <option value="ot">Outro</option>
         </select>
 
-        <label for="camisa">Tamanho da Camisa:</label>
-        <select name="camisa" id="camisa">
+        <label for="camisa">Tamanho da Camiseta:</label>
+        <select name="camisa" id="camisa" required>
             <option value="">-- Selecione --</option>
             <option value="pp">PP</option>
             <option value="p">P</option>
@@ -40,38 +41,20 @@
             <option value="gg">GG</option>
         </select>
 
-        <label for="oficina">Escolha uma Oficina:</label>
-        <select name="oficina" id="oficina">
+        <label for="categoria">Categoria da Corrida:</label>
+        <select name="categoria" id="categoria" required>
             <option value="">-- Selecione --</option>
-            <option value="opcao1">Programação para Iniciantes</option>
-            <option value="opcao2">Design Thinking</option>
-            <option value="opcao3">Inteligência Artificial no Dia a Dia</option>
-            <option value="opcao4">Criação de Startups</option>
-            <option value="opcao5">Marketing Digital</option>
-            <option value="opcao6">UX/UI Design</option>   
-        </select>
-
-        <label for="turno">Escolha um Turno:</label>
-        <select name="turno" id="turno">
-            <option value="">-- Selecione --</option>
-            <option value="t1">Manhã</option>
-            <option value="t2">Tarde</option>
-            <option value="t3">Noite</option>
-        </select>
-
-        <label for="ticket">Tipo de Ingresso:</label>
-        <select name="ticket" id="ticket" required>
-            <option value="">-- Selecione --</option>
-            <option value="estudante">Estudante (50% de desconto)</option>
-            <option value="profissional">Profissional (acesso normal)</option>
-            <option value="vip">VIP (todas as oficinas + brindes)</option>
+            <option value="3">3 km</option>
+            <option value="5"> 5 km</option>
+            <option value="10">10 km</option>
+            <option value="21">21 km</option>
         </select>
 
         <label for="message">Observações:</label>
         <textarea name="message" id="message"></textarea>
 
         <label>
-            <input type="checkbox" id="confirm" required>Confirmo minha inscrição na InovaWeek 2025
+            <input type="checkbox" id="confirm" required>Confirmo minha inscrição no RunTech 2025
         </label>
 
         <button type="submit">Enviar Inscrição</button>

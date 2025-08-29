@@ -5,15 +5,14 @@ const emailInput = document.querySelector("#email");
 const phoneInput = document.querySelector("#phone");
 const sexoSelect = document.querySelector("#sexo");
 const camisaSelect = document.querySelector("#camisa");
-const oficinaSelect = document.querySelector("#oficina");
-const turnoSelect = document.querySelector("#turno");
-const ticketSelect = document.querySelector("#ticket");
+const categoriaSelect = document.querySelector("#categoria");
 const messageTextarea = document.querySelector("#message");
+const confirmCheckbox = document.querySelector("#confirm");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    if(nameInput.value === ""){
+    if (nameInput.value === "") {
         alert("Por favor, preencha o seu nome.");
         return;
     }
@@ -28,38 +27,33 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
-    if (phoneInput.value === ""){
+    if (phoneInput.value === "") {
         alert("Por favor, preencha com o seu número de telefone.");
         return;
     }
 
-    if (sexoSelect.value === ""){
-        alert("Por favor, escolha uma das opções.");
+    if (sexoSelect.value === "") {
+        alert("Por favor, escolha uma das opções de sexo.");
         return;
     }
 
-    if (camisaSelect.value === ""){
+    if (camisaSelect.value === "") {
         alert("Por favor, escolha um dos tamanhos de camisa.");
         return;
     }
 
-    if (oficinaSelect.value === ""){
-        alert("Por favor, escolha uma das oficinas.");
+    if (categoriaSelect.value === "") {
+        alert("Por favor, escolha uma categoria da corrida.");
         return;
     }
 
-    if (turnoSelect.value === ""){
-        alert("Por favor, escolha uma das opções de turno.");
+    if (!confirmCheckbox.checked) {
+        alert("Você precisa confirmar sua inscrição.");
         return;
     }
 
-    if (ticketSelect.value === ""){
-        alert("Por favor, escolha um dos tipos de ingresso.");
-        return;
-    }
-
-    if (messageTextarea.value === ""){
-        alert("Por favor, preencha o campo de mensagem.");
+    if (messageTextarea.value === "") {
+        alert("Por favor, preencha o campo de observações.");
         return;
     }
 
@@ -69,10 +63,8 @@ form.addEventListener("submit", (event) => {
     console.log("Telefone:", phoneInput.value);
     console.log("Sexo:", sexoSelect.value);
     console.log("Tamanho da camisa:", camisaSelect.value);
-    console.log("Oficina:", oficinaSelect.value);
-    console.log("Turno:", turnoSelect.value);
-    console.log("Tipo de ingresso:", ticketSelect.value);
-    console.log("Mensagem:", messageTextarea.value);
+    console.log("Categoria da corrida:", categoriaSelect.value);
+    console.log("Observações:", messageTextarea.value);
 
     alert("Inscrição realizada com sucesso! Confira o seu email para mais informações.");
 
