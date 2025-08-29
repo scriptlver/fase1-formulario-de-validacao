@@ -13,7 +13,7 @@ const messageTextarea = document.querySelector("#message");
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    if(nameInput.value ===""){
+    if(nameInput.value === ""){
         alert("Por favor, preencha o seu nome.");
         return;
     }
@@ -58,14 +58,23 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
-    if(messageTextarea.value ===""){
-        alert("Por favor, preencha a mensagem");
+    if (messageTextarea.value === ""){
+        alert("Por favor, preencha o campo de mensagem.");
         return;
     }
-    form.submit();
-    
-});    
 
+    console.log("Nome:", nameInput.value);
+    console.log("Data de nascimento:", birthInput.value);
+    console.log("Email:", emailInput.value);
+    console.log("Telefone:", phoneInput.value);
+    console.log("Sexo:", sexoSelect.value);
+    console.log("Tamanho da camisa:", camisaSelect.value);
+    console.log("Oficina:", oficinaSelect.value);
+    console.log("Turno:", turnoSelect.value);
+    console.log("Tipo de ingresso:", ticketSelect.value);
+    console.log("Mensagem:", messageTextarea.value);
 
+    alert("Inscrição realizada com sucesso! Confira o seu email para mais informações.");
 
-
+    form.reset();
+});
