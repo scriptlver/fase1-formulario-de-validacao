@@ -6,7 +6,7 @@ const emailInput = document.querySelector("#email");
 const phoneInput = document.querySelector("#phone");
 const sexoSelect = document.querySelector("#sexo");
 const camisaSelect = document.querySelector("#camisa");
-const PCDSelect = document.querySelector("#tipo");
+const tipoSelect = document.querySelector("#tipo");
 const categoriaSelect = document.querySelector("#categoria");
 const messageTextarea = document.querySelector("#message");
 const confirmCheckbox = document.querySelector("#confirm");
@@ -24,8 +24,13 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
-    if (cpfInput.value === ""){
+    if (cpfInput.value === "") {
         alert("Por favor, preencha o seu CPF.");
+        return;
+    }
+
+    if (cpfInput.value.length !== 11) {
+        alert("O CPF deve conter 11 dígitos.");
         return;
     }
 
@@ -71,6 +76,7 @@ form.addEventListener("submit", (event) => {
 
     console.log("Nome:", nameInput.value);
     console.log("Data de nascimento:", birthInput.value);
+    console.log("CPF:", cpfInput.value);
     console.log("Email:", emailInput.value);
     console.log("Telefone:", phoneInput.value);
     console.log("Sexo:", sexoSelect.value);
