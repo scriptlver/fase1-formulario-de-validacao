@@ -9,6 +9,7 @@ h1 {
     color: #fff;
     text-align: center;
     margin-top: 20px;
+    padding: 25px;
 }
 
 .race-info {
@@ -24,14 +25,14 @@ h1 {
 
 
 .container {
-    margin: 40px auto; 
+    margin: 15px auto; 
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 1175px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
     overflow: hidden;
 }
 
@@ -74,7 +75,7 @@ h1 {
 
         .form-section button {
             padding: 10px;
-            background-color: #000;
+            background-color: #4e185a;
             color: #fff;
             border: none;
             border-radius: 5px;
