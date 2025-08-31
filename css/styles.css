@@ -1,3 +1,4 @@
+/* ===== Estilos Gerais ===== */
 body {
     font-family: Arial, sans-serif;
     background-color: #772888; 
@@ -12,8 +13,9 @@ h1 {
     padding: 15px;
 }
 
+/* ===== Informações da Corrida ===== */
 .race-info {
-    margin-top: 15px;
+    margin-top: 5px;
     padding: 20px;
     border-radius: 40px;
     font-size: 16px;
@@ -23,7 +25,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-
+/* ===== Container Principal ===== */
 .container {
     margin: 15px auto; 
     display: flex;
@@ -36,63 +38,99 @@ h1 {
     overflow: hidden;
 }
 
+/* ===== Seção da Imagem ===== */
+.image-section {
+    flex: 1.1;
+}
 
-        .image-section {
-            flex: 1.1;
-        }
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-        .image-section img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+/* ===== Seção do Formulário ===== */
+.form-section {
+    flex: 1;
+    padding: 25px;
+}
 
-        .form-section {
-            flex: 1;
-            padding: 25px;
-        }
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
 
-        .form-section form {
-            display: flex;
-            flex-direction: column;
-        }
+.form-section label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
-        .form-section label {
-            margin-top: 10px;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
+.form-section input,
+.form-section select,
+.form-section textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
 
-        .form-section input,
-        .form-section select,
-        .form-section textarea {
-            padding: 8px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
+/* ===== Botão ===== */
+.form-section button {
+    padding: 10px;
+    background-color: #4e185a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
-        .form-section button {
-            padding: 10px;
-            background-color: #4e185a;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
+.form-section button:hover {
+    background-color: #333;
+}
 
-        .form-section button:hover {
-            background-color: #333;
-        }
+/* ===== Formulário Flexível para Observações ===== */
+.flex-row {
+    display: flex;
+    align-items: center; /* centraliza verticalmente label e textarea */
+    gap: -50px; /* espaço entre label e textarea */
+}
 
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
+.flex-row label {
+    flex: 0 0 150px; /* largura fixa do label */
+    margin: 0;
+}
 
-            .image-section, .form-section {
-                flex: unset;
-            }
-        }
+.flex-row textarea {
+    flex: 1; /* ocupa o resto do espaço */
+    min-height: 70px;
+}
+
+/* ===== Ajuste para largura total ===== */
+.full-width {
+    width: 100%;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section, .form-section {
+        flex: unset;
+    }
+
+    /* Empilha label e textarea em telas pequenas */
+    .flex-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .flex-row label {
+        margin-bottom: 5px;
+        flex: unset;
+    }
+}
