@@ -13,10 +13,10 @@ h1 {
 }
 
 .race-info {
-    margin-top: 40px;
-    padding: 15px;
+    margin-top: 15px;
+    padding: 20px;
     border-radius: 40px;
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .race-info h2 {
@@ -29,7 +29,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    max-width: 1175px;
+    max-width: 890px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
@@ -38,7 +38,7 @@ h1 {
 
 
         .image-section {
-            flex: 1.5;
+            flex: 1.1;
         }
 
         .image-section img {
@@ -49,7 +49,7 @@ h1 {
 
         .form-section {
             flex: 1;
-            padding: 30px;
+            padding: 25px;
         }
 
         .form-section form {

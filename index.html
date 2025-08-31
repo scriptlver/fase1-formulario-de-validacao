@@ -12,77 +12,101 @@
         <div class="image-section">
             <img src="photos/runtech.png" alt="Evento RunTech">
             <div class="race-info">
-            <p><strong>Início das inscrições:</strong> 31/08/2025 - 00:00</p>
-            <p><strong>Fim das inscrições:</strong> 20/09/2025 - 23:59</p>
-            <p><strong>Início da entrega de kits:</strong> 24/09/2025 - 09:00</p>
-            <p><strong>Fim da entrega de kits:</strong> 26/09/2025 - 16:00</p>
-            <p><strong>Data da corrida:</strong> 27/09/2025 - 05:30</p>
-            <p><strong>Local da largada:</strong> Açude Velho</p>
+                <p><strong>Início das inscrições:</strong> 31/08/2025 - 00:00</p>
+                <p><strong>Fim das inscrições:</strong> 20/09/2025 - 23:59</p>
+                <p><strong>Início da entrega de kits:</strong> 24/09/2025 - 09:00</p>
+                <p><strong>Fim da entrega de kits:</strong> 26/09/2025 - 16:00</p>
+                <p><strong>Data da corrida:</strong> 27/09/2025 - 05:30</p>
+                <p><strong>Local da largada:</strong> Açude Velho</p>
             </div>
-         </div>
+        </div>
 
         <div class="form-section">
             <form id="form">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" placeholder="Digite o seu nome" />
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite o seu nome" />
+                </div>
 
-                <label for="birth">Data de Nascimento:</label>
-                <input type="date" id="birth" name="birth" />
+                <div class="form-group">
+                    <label for="birth">Data de Nascimento:</label>
+                    <input type="date" id="birth" name="birth" />
+                </div>
 
-                <label for ="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14">
+                <div class="form-group">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14">
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Digite o seu email" />
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o seu email" />
+                </div>
 
-                <label for="phone">Telefone:</label>
-                <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" />
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" />
+                </div>
 
-                <label for="sexo">Sexo:</label>
-                <select name="sexo" id="sexo">
-                    <option value="">-- Selecione --</option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Feminino">Feminino</option>
-                    <option value="Outro">Outro</option>
-                </select>
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="">-- Selecione --</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
 
-                <label for="camisa">Tamanho da Camiseta:</label>
-                <select name="camisa" id="camisa">
-                    <option value="">-- Selecione --</option>
-                    <option value="PP">PP</option>
-                    <option value="P">P</option>
-                    <option value="M">M</option>
-                    <option value="G">G</option>
-                    <option value="GG">GG</option>
-                    <option value="XG">XG</option>
-                </select>
+                <div class="form-group">
+                    <label for="camisa">Tamanho da Camiseta:</label>
+                    <select name="camisa" id="camisa">
+                        <option value="">-- Selecione --</option>
+                        <option value="PP">PP</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                        <option value="XG">XG</option>
+                    </select>
+                </div>
 
-                <label for="tipo">Atleta PCD?</label>
-                <select name="tipo" id="tipo">
-                    <option value="">-- Selecione --</option>
-                    <option value="Sim">Sim</option>
-                    <option value="Não">Não</option>
-                </select>    
+                <div class="form-group">
+                    <label for="tipo">Atleta PCD?</label>
+                    <select name="tipo" id="tipo">
+                        <option value="">-- Selecione --</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>    
+                </div>
 
-                <label for="categoria">Categoria da Corrida:</label>
-                <select name="categoria" id="categoria">
-                    <option value="">-- Selecione --</option>
-                    <option value="3 KM">3 KM</option>
-                    <option value="5 KM">5 KM</option>
-                    <option value="10 KM">10 KM</option>
-                    <option value="21 KM">21 KM</option>
-                    <option value="PCD">PCD - 5KM</option>
-                    <option value="cadeirante">PCD - Cadeirante</option>
-                </select>
+                <div class="form-group">
+                    <label for="categoria">Categoria da Corrida:</label>
+                    <select name="categoria" id="categoria">
+                        <option value="">-- Selecione --</option>
+                        <option value="3 KM">3 KM</option>
+                        <option value="5 KM">5 KM</option>
+                        <option value="10 KM">10 KM</option>
+                        <option value="21 KM">21 KM</option>
+                        <option value="PCD">PCD - 5KM</option>
+                        <option value="cadeirante">PCD - Cadeirante</option>
+                    </select>
+                </div>
 
-                <label for="message">Observações:</label>
-                <textarea id="message" name="message" maxlength="250" placeholder="Máximo de 250 caracteres"></textarea>
+                <div class="form-group full-width">
+                    <label for="message">Observações:</label>
+                    <textarea id="message" name="message" maxlength="250" placeholder="Máximo de 250 caracteres"></textarea>
+                </div>
 
-                <label>
-                    <input type="checkbox" id="confirm"> Confirmo minha inscrição no RunTech 2025
-                </label>
+                <div class="form-group full-width">
+                    <label>
+                        <input type="checkbox" id="confirm"> Confirmo minha inscrição no RunTech 2025
+                    </label>
+                </div>
 
-                <button type="submit">Enviar Inscrição</button>
+                <div class="form-group full-width">
+                    <button type="submit">Enviar Inscrição</button>
+                </div>
             </form>
         </div>
     </div>
