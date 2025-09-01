@@ -66,10 +66,21 @@ h1 {
 .form-section textarea {
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #888;  
     margin-bottom: 10px;
     font-size: 13px;
+    background-color: #f0f0f0; 
+    color: #222;             
 }
+
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus {
+    background-color: #e0e0e0; 
+    border-color: #6a1b9a;  
+    outline: none;
+}
+
 
 .form-section button {
     padding: 8px 12px;
