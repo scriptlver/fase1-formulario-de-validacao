@@ -1,4 +1,3 @@
-/* ===== Estilos Gerais ===== */
 body {
     font-family: Arial, sans-serif;
     background-color: #772888; 
@@ -13,7 +12,6 @@ h1 {
     padding: 15px;
 }
 
-/* ===== Informações da Corrida ===== */
 .race-info {
     margin-top: 5px;
     padding: 20px;
@@ -25,7 +23,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* ===== Container Principal ===== */
 .container {
     margin: 15px auto; 
     display: flex;
@@ -38,7 +35,6 @@ h1 {
     overflow: hidden;
 }
 
-/* ===== Seção da Imagem ===== */
 .image-section {
     flex: 1.1;
 }
@@ -49,7 +45,6 @@ h1 {
     object-fit: cover;
 }
 
-/* ===== Seção do Formulário ===== */
 .form-section {
     flex: 1;
     padding: 25px;
@@ -76,7 +71,6 @@ h1 {
     font-size: 14px;
 }
 
-/* ===== Botão ===== */
 .form-section button {
     padding: 10px;
     background-color: #4e185a;
@@ -91,29 +85,27 @@ h1 {
     background-color: #333;
 }
 
-/* ===== Formulário Flexível para Observações ===== */
 .flex-row {
     display: flex;
-    align-items: center; /* centraliza verticalmente label e textarea */
-    gap: -50px; /* espaço entre label e textarea */
+    align-items: center;
+    gap: -50px; 
 }
 
 .flex-row label {
-    flex: 0 0 150px; /* largura fixa do label */
+    flex: 0 0 150px;
     margin: 0;
 }
 
 .flex-row textarea {
-    flex: 1; /* ocupa o resto do espaço */
+    flex: 1;
     min-height: 70px;
 }
 
-/* ===== Ajuste para largura total ===== */
 .full-width {
     width: 100%;
 }
 
-/* ===== Responsividade ===== */
+/*RESPONSIVIDADE*/
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -123,12 +115,11 @@ h1 {
         flex: unset;
     }
 
-    /* Empilha label e textarea em telas pequenas */
     .flex-row {
         flex-direction: column;
         align-items: stretch;
     }
-
+    
     .flex-row label {
         margin-bottom: 5px;
         flex: unset;
