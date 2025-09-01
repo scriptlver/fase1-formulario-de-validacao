@@ -72,18 +72,25 @@ h1 {
 }
 
 .form-section button {
-    padding: 10px;
-    background-color: #4e185a;
+    padding: 8px 12px;
+    background: #772888;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .form-section button:hover {
-    background-color: #333;
+    transform: scale(1.05);
+    opacity: 0.9;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
 }
+
 
 .flex-row {
     display: flex;
