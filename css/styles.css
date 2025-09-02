@@ -127,26 +127,27 @@ h1 {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        max-width: 95%; /* pra não colar na borda */
+        max-width: 95%;
     }
 
     .form-section {
-        max-width: 500px; /* largura máxima do formulário */
-        width: 90%;       /* ocupa 90% do espaço disponível */
-        margin: 0 auto;   /* centraliza */
+        max-width: 500px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .image-section {
-        max-height: 250px; /* controla a altura da imagem no mobile */
-        overflow: hidden;
+        width: 100%;
+        text-align: center;
     }
 
     .image-section img {
         width: 100%;
-        height: auto;          
-        object-fit: contain;   
-        display: block;        
-        margin: 0 auto;        
+        height: auto;        
+        max-height: none;    
+        object-fit: contain; 
+        display: block;
+        margin: 0 auto;
     }
 
     .flex-row {
