@@ -42,7 +42,7 @@ h1 {
 .image-section img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .form-section {
@@ -127,10 +127,26 @@ h1 {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        max-width: 95%; /* pra não colar na borda */
     }
 
-    .image-section, .form-section {
-        flex: unset;
+    .form-section {
+        max-width: 500px; /* largura máxima do formulário */
+        width: 90%;       /* ocupa 90% do espaço disponível */
+        margin: 0 auto;   /* centraliza */
+    }
+
+    .image-section {
+        max-height: 250px; /* controla a altura da imagem no mobile */
+        overflow: hidden;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;          
+        object-fit: contain;   
+        display: block;        
+        margin: 0 auto;        
     }
 
     .flex-row {
