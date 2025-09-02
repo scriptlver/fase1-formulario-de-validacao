@@ -31,12 +31,12 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     if (nameInput.value === "") {
-        alert("Por favor, preencha o seu nome.");
+        alert("Por favor, preencha com o seu nome.");
         return;
     }
 
     if (birthInput.value === "") {
-        alert("Por favor, preencha a sua data de nascimento.");
+        alert("Por favor, preencha com a sua data de nascimento.");
         return;
     }
 
@@ -46,7 +46,7 @@ form.addEventListener("submit", (event) => {
 
     let cpf = cpfInput.value.replace(/\D/g, "");
     if (cpf === "") {
-        alert("Por favor, preencha o seu CPF.");
+        alert("Por favor, preencha com o seu CPF.");
         return;
     }
     if (cpf.length !== 11) {

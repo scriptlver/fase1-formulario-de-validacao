@@ -1,21 +1,21 @@
-runtech 2025 🏃‍♂️
+# RunTech 2025 
 
-formulário de inscrição para a corrida fictícia runtech 2025, desenvolvido com html, css e javascript.
+Formulário de inscrição para a corrida fictícia **RunTech 2025**, desenvolvido com **HTML**, **CSS** e **JavaScript**.
 
-✨ funcionalidades
+## Funcionalidades
 
-- layout responsivo (desktop e mobile)
-- formulário de inscrição com validações básicas
-- informações do evento (datas, local e categorias)
-- estilo moderno com imagem de destaque e cores personalizadas
+- Layout responsivo (desktop e mobile)  
+- Formulário de inscrição com validações básicas  
+- Informações do evento (datas, local e categorias)  
+- Estilo moderno com imagem de destaque e cores personalizadas  
 
-🛠️ tecnologias
+## Tecnologias
 
-- html5
-- css3
-- javascript (básico)
+- HTML 
+- CSS
+- JavaScript   
 
-📱 responsividade
+## Responsividade
 
-- no desktop: formulário e imagem lado a lado
-- no mobile: layout em coluna, com formulário centralizado
+- **Desktop:** formulário e imagem lado a lado  
+- **Mobile:** layout em coluna, com formulário centralizado
