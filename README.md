@@ -19,3 +19,6 @@ Formulário de inscrição para a corrida fictícia **RunTech 2025**, desenvolvi
 
 - **Desktop:** formulário e imagem lado a lado  
 - **Mobile:** layout em coluna, com formulário centralizado
+
+## Acesso ao site  
+🔗[RunTech2025](https://scriptlver.github.io/fase1-formulario-de-validacao/)
